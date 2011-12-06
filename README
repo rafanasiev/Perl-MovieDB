@@ -1,1 +1,24 @@
-MovieDB - simple Perl-code for review
+* DESCRIPTION 
+    MovieDB - simple Perl-code for review
+
+* TASK
+    Implement a storage system for movies. The interface should be command line. Movie information must be 
+stored persistently (i.e. shutting down the process and starting it back up should not cause any data loss).  
+You are expected to use an object oriented design approach.
+
+These are the properties of movie:
+-   Identifier (system defined unique id)
+-   Title
+-   Release year
+-   Format (one of VHS, DVD, or Blu-Ray)
+-   Stars (list of names, each as one atomic string)
+
+These are the features that must be supported:
+-   Add movie (prompt for the properties)
+-   Delete movie (prompt for the identifier)
+-   Display movie (prompt for the identifier, show properties)
+-   List movies by title (list title and identifier of all movies, alphabetically by title)
+-   List movies by year (list title and identifier of all movies, chronologically by year)
+-   Find movies by title (prompt for a search string, list title and identifier of any movie whose title contains that string)
+-   Find movies by star (prompt for star name, list title and identifier of any movie including that star)
+-   Import movies (from provided text file)
